@@ -1,0 +1,29 @@
+body {
+    background-color: lightblue;
+}
+
+.selections {
+    display: flex;
+    justify-content: center;
+}
+
+.selection {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 100px;
+    transition: 100ms;
+}
+
+.selection:hover {
+    transform: scale(1.2);
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
