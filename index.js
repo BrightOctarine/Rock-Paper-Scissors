@@ -26,24 +26,24 @@ function score(game, playerScore, computerScore, playerSelection, computerSelect
 function playRound(playerSelection, computerSelection) {
     if (playerSelection == "rock" && computerSelection == "scissors") {
         playerScore++;
-        return score(1, playerScore, computerScore);
+        return score(1, playerScore, computerScore, playerSelection, computerSelection);
     } else if (playerSelection == "rock" && computerSelection == "paper") {
         computerScore++;
-        return score(0, playerScore, computerScore);
+        return score(0, playerScore, computerScore, playerSelection, computerSelection);
     } else if (playerSelection == "scissors" && computerSelection == "paper") {
         playerScore++;
-        return score(1, playerScore, computerScore);
+        return score(1, playerScore, computerScore, playerSelection, computerSelection);
     } else if (playerSelection == "scissors" && computerSelection == "rock") {
         computerScore++;
-        return score(0, playerScore, computerScore);
+        return score(0, playerScore, computerScore, playerSelection, computerSelection);
     } else if (playerSelection == "paper" && computerSelection == "rock") {
         playerScore++;
-        return score(1, playerScore, computerScore);
+        return score(1, playerScore, computerScore, playerSelection, computerSelection);
     } else if (playerSelection == "paper" && computerSelection == "scissors") {
         computerScore++;
-        return score(0, playerScore, computerScore);
+        return score(0, playerScore, computerScore, playerSelection, computerSelection);
     } else {
-        return score(2, playerScore, computerScore);
+        return score(2, playerScore, computerScore, playerSelection, computerSelection);
     }
 }
 
